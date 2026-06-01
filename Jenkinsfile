@@ -1,5 +1,3 @@
-// call is the default function name
-def call (Map configMap){
     pipeline {
         agent {
             node {
@@ -19,8 +17,8 @@ def call (Map configMap){
             disableConcurrentBuilds()
         }
         parameters {
-        string(name: 'appVersion', description: 'Which app version you want to deploy')
-        choice(name: 'deploy_to', choices: ['dev', 'qa', 'prod'], description: 'Pick something')
+            string(name: 'appVersion', description: 'Which app version you want to deploy')
+            choice(name: 'deploy_to', choices: ['dev', 'qa', 'prod'], description: 'Pick something')
         }
         stages {
             stage("depoy") {
@@ -53,4 +51,5 @@ def call (Map configMap){
             }
         }
     }
-}
+
+    
