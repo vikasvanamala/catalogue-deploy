@@ -21,7 +21,7 @@
             choice(name: 'deploy_to', choices: ['dev', 'qa', 'prod'], description: 'Pick something')
         }
         stages {
-            stage("depoy") {
+            stage("deploy") {
                 steps {
                     script {
                         withAWS(region:'us-east-1',credentials:'aws-creds'){
