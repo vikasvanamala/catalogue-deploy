@@ -11,7 +11,7 @@ def call (Map configMap){
             appVersion = ""
             ACC_ID = "215446237872"
             PROJECT = "roboshop"
-            COMPONENT = catalogue
+            COMPONENT = "catalogue"
             REGION = "us-east-1"
         }
         options {
