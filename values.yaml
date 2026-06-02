@@ -1,7 +1,7 @@
 deployment:
   replicas: 1
   imageRepo: 215446237872.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue
-  imageVersion: 1.1.1
+  imageVersion: 1.0.0
 
 service:
   servicePort: 8080
